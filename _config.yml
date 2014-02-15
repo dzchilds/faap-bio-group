@@ -1,0 +1,7 @@
+name: "Sheffield Population Biology Group"
+description: "We do population biology on it"
+
+url: "file:///Users/dzchilds/Repos/faap-bio-group/_site/"
+
+markdown: redcarpet
+permalink: pretty
