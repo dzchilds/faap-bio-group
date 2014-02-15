@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ site.description }}">
+  <title>{{ site.name }}</title>
+  <link rel="stylesheet" type="text/css" href="{{ site.url }}css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="{{ site.url }}css/tweaks.css"/>
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  {% include navbar.html%}
+  <div class="container main-content-container">
+    <div class="row">    
+      <div class="jumbotron">
+        <div class="container span12">
+          <h3>Fundamental and Applied Population Biology Group</h3>
+          <p data-lorem="2s"></p>
+        </div>
+      </div>
+      <div class="main-content span10">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+  {% include footer.html  %}
+  {% include scripts.html %}
+</body></html>
