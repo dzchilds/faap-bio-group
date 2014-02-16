@@ -1,0 +1,24 @@
+---
+me:
+  name: Dylan Childs
+  email: d.childs@sheffield.ac.uk
+  url: http://www.shef.ac.uk/aps/staff-and-students/acadstaff/childs
+
+phds:
+  - jgriffiths: &jgriffiths
+      name: Jason Griffiths
+      email: jason.griffiths@sheffield.ac.uk
+      about: <span data-lorem="4s"></span>
+  - bhindle: &bhindle
+      name: Bethan Hindle
+      email: bjhindle1@sheffield.ac.uk
+      about: <span data-lorem="4s"></span>
+
+pdras:
+  - lola1: 
+      name: LoLa Post Doc
+  - lola2: 
+      name: LoLa Post Doc
+
+phd-current: [*jgriffiths, *bhindle]
+

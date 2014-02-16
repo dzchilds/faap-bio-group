@@ -1,0 +1,33 @@
+---
+people:
+  - tcoulson: &tcoulson
+      name: Tim Coulson
+      url: http://www.zoo.ox.ac.uk/people/view/coulson_t.htm
+  - mrees: &mrees
+      name: Mark Rees
+      url: http://www.shef.ac.uk/aps/staff-and-students/acadstaff/rees
+  - rdbassar: &rdbassar
+      name: Ron Bassar
+      url: http://www.lsc.usgs.gov/?q=cafb-ronald-bassar
+
+format:
+  - sep: &sep
+      name: ", "
+  - and: &and
+      name: " and "
+  - PI: &pitext
+      name: " (PI)"
+      
+funded:
+  - stitle: Size-structured density dependence
+    funding: "2014-2017: NERC (NE/K014218/1)"
+    image: fish-297-297.png
+    collaborators: [*tcoulson, *pitext, *sep, *rdbassar, *and, *mrees]
+    description: <span data-lorem="7s"></span>
+    
+      
+      
+      
+
+
+
