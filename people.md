@@ -1,9 +1,9 @@
 ---
-layout: new-default
+layout: default
 title: people in the group
 ---
 
-<div class="col-sm-3 col-md-3">
+<div class="col-sm-3 col-md-2">
   <h4 class>Who are we?</h4>
   <hr>
   <h5>Group Leader</h5>
@@ -13,21 +13,22 @@ title: people in the group
     {% for person in site.data.people.phd-current %}
 	  <p>{{ person.name }}</p>
     {% endfor %}
+	<br>
 </div>
 
-<div class="col-sm-9 col-md-9">
+<div class="col-sm-9 col-md-10">
   <h4>Current members</h4>
   <hr>
   <div class="thumbnail right-caption">
-    <img data-src="holder.js/150x150" alt="..." class="img-circle">
+    <img data-src="holder.js/120x120" alt="..." class="img-rounded">
     <div class="caption">
       <h4>Dylan Childs <small>Group Leader</small></h4>
-      <p><span data-lorem="4s"></span><a href="#"> Find out more</a></p>
+      <p class="text-justify">Dylan is a population biologist with interests at both the pure and applied ends of the spectrum. He follows an interdisciplinary approach, developing data-driven models to understand population dynamics and natural selection in laboratory and free-living populations. He is particularly keen to understand how demographic, environmental and ecological processes interact to shape selection on life histories. He is also interested in developing theory and applications for modelling structured populations.</p>
     </div>
   </div>
   {% for person in site.data.people.phd-current %}
   <div class="thumbnail right-caption">
-    <img data-src="holder.js/150x150" alt="..." class="img-circle">
+    <img data-src="holder.js/120x120" alt="..." class="img-rounded"">
     <div class="caption">
       <h4>{{ person.name }} <small>PhD Student</small></h4>
       <p>{{ person.about }}<a href="#"> Find out more</a></p>
@@ -37,7 +38,7 @@ title: people in the group
   <h4>Positions Available</h4>
   <hr>
   <div class="thumbnail right-caption">
-    <img data-src="holder.js/160x160" alt="..." class="img-circle">
+    <img data-src="holder.js/120x120" alt="..." class="img-circle">
     <div class="caption">
       <h4>Post Doc <small>Starting May 2014</small></h4>
       <p><span data-lorem="4s"></span><a href="#"> Find out more</a></p>
