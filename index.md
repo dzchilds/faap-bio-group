@@ -22,7 +22,24 @@ title: Fundamental and Applied Population Biology Group
 </div>
 {% endfor %}
 
-<div class="col-sm-9 col-md-9">
+<div class="row">
+  <div class="col-sm-4 col-md-4 text-center">
+	<div class="well well-small"><h4><i class="fa fa-male fa-2x fa-fw"></i>People<h4></div>
+  </div>
+  <div class="col-sm-4 col-md-4 text-center">
+	<div class="well"><h4><i class="fa fa-bug fa-2x fa-fw"></i>Research<h4></div>
+  </div>
+  <div class="col-sm-4 col-md-4 text-center">
+	<div class="well"><h4><i class="fa fa-book fa-2x fa-fw"></i>Publications<h4></div>
+  </div>
+</div>
+
+<div class="row"> 
+    <p class="text-center"><br></p>
+</div>
+
+<div class="row">
+<div class="col-sm-8 col-md-8">
   <h3 class>News and Opportunities</h3>
   <hr>
   <ul class="list-unstyled">
@@ -34,8 +51,15 @@ title: Fundamental and Applied Population Biology Group
       {% endfor %}
   </ul>
 </div>
-
-<div class="col-sm-3 col-md-3">
-  <h3 class>Other Stuff</h3>
-  <span data-lorem="5s"></span>
+<div class="col-sm-4 col-md-4">
+  <div class="well">
+    <h4> Contact us </h4>
+    <span data-lorem="8s"></span>
+    <br>
+    <h5 class="text-left"><i class="fa fa-twitter fa-lg"></i>&nbsp;dylan_childs</h5>
+    <h5 class="text-left"><i class="fa fa-envelope-o fa-lg"></i>&nbsp;d.childs@sheffield.ac.uk</h5>
+    <h5 class="text-left"><i class="fa fa-phone fa-lg"></i>&nbsp;(+44)&nbsp;(0)114&nbsp;222&nbsp;4313</h5>
+  </div>
 </div>
+</div>
+

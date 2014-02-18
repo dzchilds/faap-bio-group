@@ -8,6 +8,8 @@
   <link rel="stylesheet" type="text/css"
    href="file:///Users/dzchilds/Repos/faap-bio-group/_site/assets/css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css"
+   href="file:///Users/dzchilds/Repos/faap-bio-group/_site/assets/css/font-awesome.min.css"/>
+  <link rel="stylesheet" type="text/css"
    href="file:///Users/dzchilds/Repos/faap-bio-group/_site/assets/css/tweaks.css"/>
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
@@ -16,8 +18,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid span10">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
 	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#faap-bio-nav">
@@ -26,33 +28,30 @@
 	  <span class="icon-bar"></span>
 	  <span class="icon-bar"></span>
 	  </button>
-	  <a class="navbar-brand" href="index.html"></a>
+	  <a class="navbar-brand" href="file:///Users/dzchilds/Repos/faap-bio-group/_site/index.html"><i class="fa fa-home fa-lg"></i></a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="faap-bio-nav">
-	<ul class="nav navbar-nav">
-	  <li><a href="file:///Users/dzchilds/Repos/faap-bio-group/_site/index.html"         >About   </a></li>
+	<ul class="nav navbar-nav navbar-right">
 	  <li><a href="file:///Users/dzchilds/Repos/faap-bio-group/_site/people/index.html"  >People  </a></li>
 	  <li><a href="file:///Users/dzchilds/Repos/faap-bio-group/_site/research/index.html">Research</a></li>
 	  <li><a href="file:///Users/dzchilds/Repos/faap-bio-group/_site/outputs/index.html" >Outputs </a></li>
 	</ul>
       </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+    </div><!-- /.container -->
   </nav>
 
-  <div class="container main-content-container">
-    <div class="row">    
-      <div class="jumbotron">
-        <div class="container span12">
-          <h3>Fundamental and Applied Population Biology Group</h3>
-          <p><small>We are part of the <a href="http://www.sheffield.ac.uk/aps">Department of
-	  Animal and Plant Sciences</a> at the <a href="http://www.sheffield.ac.uk">University
-	  of Sheffield</a>. We are interested in the population biology and life histories of
-	  organisms.</small></p>
-        </div>
-      </div>
-      <div class="main-content span10">
-        <div class="modal fade" id="modal_id1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="jumbotron">
+    <div class="container">
+      <h3>Fundamental and Applied Population Biology Group</h3>
+      <p><small>We are part of the <a href="http://www.sheffield.ac.uk/aps">Department of
+      Animal and Plant Sciences</a> at the <a href="http://www.sheffield.ac.uk">University
+      of Sheffield</a>. We are interested in the population biology and life histories of
+      organisms.</small></p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="modal fade" id="modal_id1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -118,7 +117,24 @@
   </div>
 </div>
 
-<div class="col-sm-9 col-md-9">
+<div class="row">
+  <div class="col-sm-4 col-md-4 text-center">
+    <div class="well well-small"><h4><i class="fa fa-male fa-2x fa-fw"></i>People<h4></div>
+  </div>
+  <div class="col-sm-4 col-md-4 text-center">
+    <div class="well"><h4><i class="fa fa-bug fa-2x fa-fw"></i>Research<h4></div>
+  </div>
+  <div class="col-sm-4 col-md-4 text-center">
+    <div class="well"><h4><i class="fa fa-book fa-2x fa-fw"></i>Publications<h4></div>
+  </div>
+</div>
+
+<div class="row"> 
+    <p class="text-center"><br></p>
+</div>
+
+<div class="row">
+<div class="col-sm-8 col-md-8">
   <h3 class>News and Opportunities</h3>
   <hr>
   <ul class="list-unstyled">
@@ -144,26 +160,34 @@
   </ul>
 </div>
 
-<div class="col-sm-3 col-md-3">
-  <h3 class>Other Stuff</h3>
-  <span data-lorem="5s"></span>
+<div class="col-sm-4 col-md-4">
+  <div class="well">
+    <h4> Contact us </h4>
+    <span data-lorem="8s"></span>
+    <br>
+    <h5 class="text-left"><i class="fa fa-twitter fa-lg"></i>&nbsp;dylan_childs</h5>
+    <h5 class="text-left"><i class="fa fa-envelope-o fa-lg"></i>&nbsp;d.childs@sheffield.ac.uk</h5>
+    <h5 class="text-left"><i class="fa fa-phone fa-lg"></i>&nbsp;(+44)&nbsp;(0)114&nbsp;222&nbsp;4313</h5>
+  </div>
 </div>
 
-      </div>
-    </div>
+<p></div></p>
+
   </div>
-    <div class="navbar navbar-fixed-bottom">
-    <hr>
-    <p style="text-align:center"> Unimaginatively constructed with
+    <div class="navbar navbar-fixed-bottom navbar-inverse">
+    <div class="container">
+      <p class="navbar-text navbar-right"> Unimaginatively constructed with
       <a href="http://jekyllrb.com/">jekyll</a> and
       <a href="http://getbootstrap.com">bootstrap</a>. Source available on
       <a href="https://github.com/dzchilds/faap-bio-group">github</a>.
-    </p>
+      </p>
+    </div>
   </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="file:///Users/dzchilds/Repos/faap-bio-group/_site/assets/js/bootstrap.min.js"></script>
   <script src="file:///Users/dzchilds/Repos/faap-bio-group/_site/assets/js/holder.js"></script>
   <script src="file:///Users/dzchilds/Repos/faap-bio-group/_site/assets/js/lorem.js"></script>
+
 
 </body></html>

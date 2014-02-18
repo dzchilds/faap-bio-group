@@ -1,38 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{ site.description }}">
-  <title>{{ site.name }}</title>
-  <link rel="stylesheet" type="text/css"
-   href="{{ site.url }}assets/css/bootstrap.min.css"/>
-  <link rel="stylesheet" type="text/css"
-   href="{{ site.url }}assets/css/tweaks.css"/>
-  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-  <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-</head>
-
+{% include head.html %}
 <body>
   {% include navbar.html%}
-  <div class="container main-content-container">
-    <div class="row">    
-      <div class="jumbotron">
-        <div class="container span12">
-          <h3>Fundamental and Applied Population Biology Group</h3>
-          <p><small>We are part of the <a href="http://www.sheffield.ac.uk/aps">Department of
-	  Animal and Plant Sciences</a> at the <a href="http://www.sheffield.ac.uk">University
-	  of Sheffield</a>. We are interested in the population biology and life histories of
-	  organisms.</small></p>
-        </div>
-      </div>
-      <div class="main-content span10">
-        {{ content }}
-      </div>
+  <div class="jumbotron">
+    <div class="container">
+      <h3>Fundamental and Applied Population Biology Group</h3>
+      <p><small>We are part of the <a href="http://www.sheffield.ac.uk/aps">Department of
+      Animal and Plant Sciences</a> at the <a href="http://www.sheffield.ac.uk">University
+      of Sheffield</a>. We are interested in the population biology and life histories of
+      organisms.</small></p>
     </div>
   </div>
-  {% include footer.html  %}
-  {% include scripts.html %}
+  <div class="container">
+    {{ content }}
+  </div>
+  {% include footer.html%}
+  {% include scripts.html%}
+
 </body></html>
