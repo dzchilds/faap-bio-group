@@ -24,13 +24,13 @@ title: Fundamental and Applied Population Biology Group
 
 <div class="row">
   <div class="col-sm-4 col-md-4 text-center">
-	<div class="well well-small"><h4><i class="fa fa-male fa-2x fa-fw"></i>People<h4></div>
+	<div class="well"><h4><a href="{{ site.url }}people/index.html" ><i class="fa fa-user fa-2x fa-fw"></i>People</a><h4></div>
   </div>
   <div class="col-sm-4 col-md-4 text-center">
-	<div class="well"><h4><i class="fa fa-bug fa-2x fa-fw"></i>Research<h4></div>
+	<div class="well"><h4><a href="{{ site.url }}research/index.html" ><i class="fa fa-bug fa-2x fa-fw"></i>Research</a><h4></div>
   </div>
   <div class="col-sm-4 col-md-4 text-center">
-	<div class="well"><h4><i class="fa fa-book fa-2x fa-fw"></i>Publications<h4></div>
+	<div class="well"><h4><a href="{{ site.url }}outputs/index.html" ><i class="fa fa-file-text fa-2x fa-fw"></i>Publications</a><h4></div>
   </div>
 </div>
 
@@ -48,18 +48,24 @@ title: Fundamental and Applied Population Biology Group
         <h4><a data-toggle="modal" data-target="{{ forloop.index | prepend: "#modal_id" }}">{{ post.title }}</a> <small>{{ post.date | date_to_string }}</small></h4>
         <p>{{ post.excerpt }}</p>
       </li>
-      {% endfor %}
+    {% endfor %}
   </ul>
 </div>
 <div class="col-sm-4 col-md-4">
   <div class="well">
-    <h4> Contact us </h4>
-    <span data-lorem="8s"></span>
-    <br>
-    <h5 class="text-left"><i class="fa fa-twitter fa-lg fa-fw"></i>&nbsp;dylan_childs</h5>
-    <h5 class="text-left"><i class="fa fa-envelope-o fa-lg fa-fw"></i>&nbsp;d.childs@sheffield.ac.uk</h5>
-    <h5 class="text-left"><i class="fa fa-phone fa-lg fa-fw"></i>&nbsp;(+44)&nbsp;(0)114&nbsp;222&nbsp;4313</h5>
-  </div>
+    <h3> Contact us </h3>
+	<p class="text-justify">The group leader is Dylan Childs. You should contact him if you
+	would like discuss opportunities such as PhDs or fellowship support.
+    <br><br>
+    <p class="text-left"><i class="fa fa-twitter-square fa-lg fa-fw"></i>&nbsp;dylan_childs</p>
+    <p class="text-left"><i class="fa fa-google-plus-square fa-lg fa-fw"></i>&nbsp;d.childs@sheffield.ac.uk</p>
+    <p class="text-left"><i class="fa fa-phone fa-lg
+	fa-fw"></i>&nbsp;(+44)&nbsp;(0)114&nbsp;222&nbsp;4313</p>
+	<br>
+	<p class="text-left">
+       <small>Department of Animal and Plant Sciences<br>University of Sheffield<br>Sheffield, S10 2TN, UK</small>
+	</p>
+</div>
 </div>
 </div>
 
