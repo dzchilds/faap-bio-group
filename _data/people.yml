@@ -15,10 +15,20 @@ phds:
       about: <span data-lorem="4s"></span>
 
 pdras:
-  - lola1: 
-      name: LoLa Post Doc
-  - lola2: 
-      name: LoLa Post Doc
+  - pdra1: &pdra1
+      name: Arriving Soon
+  - pdra2: &pdra2
+      name: Arriving in 2015
+  - pdra3: &pdra3
+      name: Arriving in 2015
 
-phd-current: [*jgriffiths, *bhindle]
+mscs:
+  - jprice: &jprice
+      name: Joe Price
+  - rgoodsell: &rgoodsell
+      name: Rob Goodsell
+ 
 
+phd-current:  [*jgriffiths, *bhindle]
+pdra-current: [*pdra1, *pdra2, *pdra3]
+msc-current:  [*rgoodsell, *jprice] 

@@ -3,38 +3,28 @@ layout: default
 title: people in the group
 ---
 
-<div class="col-sm-3 col-md-2">
-  <h4 class>Who are we?</h4>
-  <hr>
-  <h5>Group Leader</h5>
-  <p>Dylan Childs</p>
-  <hr>
-  <h5>PhD Students</h5>
-    {% for person in site.data.people.phd-current %}
-	  <p>{{ person.name }}</p>
-    {% endfor %}
-	<br>
-</div>
+<div class="row hidden-xs"><p><br></p></div>
 
-<div class="col-sm-9 col-md-10">
-  <h4>Current members</h4>
-  <hr>
-  <div class="thumbnail right-caption">
-    <img data-src="holder.js/120x120" alt="..." class="img-rounded">
-    <div class="caption">
-      <h4>Dylan Childs <small>Group Leader</small></h4>
-      <p class="text-justify">Dylan is a population biologist with interests at both the pure and applied ends of the spectrum. He follows an interdisciplinary approach, developing data-driven models to understand population dynamics and natural selection in laboratory and free-living populations. He is particularly keen to understand how demographic, environmental and ecological processes interact to shape selection on life histories. He is also interested in developing theory and applications for modelling structured populations.</p>
-    </div>
+<div class="row">
+<div class="col-sm-4 col-md-4">
+  <div class="well">
+    <h4>Group Leader</h4>
+    <p>Dylan Childs</p>
+    <p><br></p>
+    <h4>Post Docs</h4>
+    {% for person in site.data.people.pdra-current %}<p><i class="fa
+	fa-user fa-lg fa-fw"></i> {{ person.name }}</p>{% endfor %}
+    <p><br></p>
+    <h4>PhD Students</h4>
+    {% for person in site.data.people.phd-current %}<p><i class="fa
+	fa-user fa-lg fa-fw"></i> {{ person.name }}</p>{% endfor %}
+    <p><br></p>
+    <h4>Masters Students</h4>
+    {% for person in site.data.people.msc-current %}<p><i class="fa
+	fa-user fa-lg fa-fw"></i> {{ person.name }}</p>{% endfor %}
   </div>
-  {% for person in site.data.people.phd-current %}
-  <div class="thumbnail right-caption">
-    <img data-src="holder.js/120x120" alt="..." class="img-rounded"">
-    <div class="caption">
-      <h4>{{ person.name }} <small>PhD Student</small></h4>
-      <p>{{ person.about }}<a href="#"> Find out more</a></p>
-    </div>
-  </div>
-  {% endfor %}      	
+</div>
+<div class="col-sm-8 col-md-8">
   <h4>Positions Available</h4>
   <hr>
   <div class="thumbnail right-caption">
@@ -44,4 +34,31 @@ title: people in the group
       <p><span data-lorem="4s"></span><a href="#"> Find out more</a></p>
     </div>
   </div>
+  <h4>Current Group Members and Associates</h4>
+  <hr>
+  <div class="thumbnail right-caption">
+    <img data-src="holder.js/120x120" alt="..." class="img-rounded">
+    <div class="caption">
+      <h4>Dylan Childs <small>Group Leader</small></h4>
+      <p class="text-justify">Dylan is a population biologist with
+  interests at both the pure and applied ends of the spectrum. He
+  follows an interdisciplinary approach, developing data-driven models
+  to understand population dynamics and natural selection in
+  laboratory and free-living populations. He is particularly keen to
+  understand how demographic, environmental and ecological processes
+  interact to shape selection on life histories. He is also interested
+  in developing theory and applications for modelling structured
+  populations. </p>
+    </div>
+  </div>
+  {% for person in site.data.people.phd-current %}
+  <div class="thumbnail right-caption">
+    <img data-src="holder.js/120x120" alt="..." class="img-rounded"">
+    <div class="caption">
+      <h4>{{ person.name }} <small>PhD Student</small></h4><p>{{ person.about }}<a href="#"> Find out more</a></p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
 </div>

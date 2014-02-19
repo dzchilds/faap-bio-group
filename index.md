@@ -22,21 +22,7 @@ title: Fundamental and Applied Population Biology Group
 </div>
 {% endfor %}
 
-<div class="row">
-  <div class="col-sm-4 col-md-4 text-center">
-	<div class="well"><h4><a href="{{ site.url }}people/index.html" ><i class="fa fa-user fa-2x fa-fw"></i>People</a><h4></div>
-  </div>
-  <div class="col-sm-4 col-md-4 text-center">
-	<div class="well"><h4><a href="{{ site.url }}research/index.html" ><i class="fa fa-bug fa-2x fa-fw"></i>Research</a><h4></div>
-  </div>
-  <div class="col-sm-4 col-md-4 text-center">
-	<div class="well"><h4><a href="{{ site.url }}outputs/index.html" ><i class="fa fa-file-text fa-2x fa-fw"></i>Publications</a><h4></div>
-  </div>
-</div>
-
-<div class="row"> 
-    <p class="text-center"><br></p>
-</div>
+<div class="row"><p><br></p></div>
 
 <div class="row">
 <div class="col-sm-8 col-md-8">
@@ -55,7 +41,7 @@ title: Fundamental and Applied Population Biology Group
   <div class="well">
     <h3> Contact us </h3>
 	<p class="text-justify">The group leader is Dylan Childs. You should contact him if you
-	would like discuss opportunities such as PhDs or fellowship support.
+	  would like discuss opportunities such as PhDs or fellowship support.
     <br><br>
     <p class="text-left"><i class="fa fa-twitter-square fa-lg fa-fw"></i>&nbsp;dylan_childs</p>
     <p class="text-left"><i class="fa fa-google-plus-square fa-lg fa-fw"></i>&nbsp;d.childs@sheffield.ac.uk</p>
@@ -65,7 +51,7 @@ title: Fundamental and Applied Population Biology Group
 	<p class="text-left">
        <small>Department of Animal and Plant Sciences<br>University of Sheffield<br>Sheffield, S10 2TN, UK</small>
 	</p>
-</div>
+  </div>
 </div>
 </div>
 
