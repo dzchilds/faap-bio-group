@@ -10,14 +10,12 @@ title: Outputs from the group
   </div>
   <div class="col-sm-10 col-md-10">
     <h4> </h4>
-    <ul>
       {% for paper in site.data.outputs.papers %}
-      <li >
+      <p>
          {% for author in paper.authors %}{{ author.name }}{% endfor %}
          ({{ paper.year }}) <em>{{ paper.title }}</em> <strong>{{ paper.journal }}</strong>
-      </li>
+      </p>
        {% endfor %}
-    </ul>
   </div>
 </div>
 
