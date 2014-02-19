@@ -56,9 +56,9 @@ title: Fundamental and Applied Population Biology Group
     <h4> Contact us </h4>
     <span data-lorem="8s"></span>
     <br>
-    <h5 class="text-left"><i class="fa fa-twitter fa-lg"></i>&nbsp;dylan_childs</h5>
-    <h5 class="text-left"><i class="fa fa-envelope-o fa-lg"></i>&nbsp;d.childs@sheffield.ac.uk</h5>
-    <h5 class="text-left"><i class="fa fa-phone fa-lg"></i>&nbsp;(+44)&nbsp;(0)114&nbsp;222&nbsp;4313</h5>
+    <h5 class="text-left"><i class="fa fa-twitter fa-lg fa-fw"></i>&nbsp;dylan_childs</h5>
+    <h5 class="text-left"><i class="fa fa-envelope-o fa-lg fa-fw"></i>&nbsp;d.childs@sheffield.ac.uk</h5>
+    <h5 class="text-left"><i class="fa fa-phone fa-lg fa-fw"></i>&nbsp;(+44)&nbsp;(0)114&nbsp;222&nbsp;4313</h5>
   </div>
 </div>
 </div>
