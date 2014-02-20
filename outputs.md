@@ -1,15 +1,15 @@
 ---
-layout: default
+layout: with-jumbotron
 title: Outputs from the group
 ---
 
 <div class="col-sm-12 col-md-12">
 <div class=row>
   <div class="col-sm-2 col-md-2">
-    <h4 class="text-center"> Papers</h4>
+    <h3 class="text-left"> Papers</h3>
   </div>
   <div class="col-sm-10 col-md-10">
-    <h4> </h4>
+    <h3> </h3>
       {% for paper in site.data.outputs.papers %}
       <p>
          {% for author in paper.authors %}{{ author.name }}{% endfor %}
@@ -21,7 +21,7 @@ title: Outputs from the group
 
 <div class=row>
   <div class="col-sm-2 col-md-2">
-    <h4 class="text-center"> Books</h4>
+    <h3 class="text-left"> Books</h3>
   </div>
   <div class="col-sm-10 col-md-10">
     <h4> </h4>

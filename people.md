@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: with-jumbotron
 title: people in the group
 ---
 
@@ -25,7 +25,7 @@ title: people in the group
   </div>
 </div>
 <div class="col-sm-8 col-md-8">
-  <h4>Positions Available</h4>
+  <h3>Positions Available</h3>
   <hr>
   <div class="thumbnail right-caption">
     <img data-src="holder.js/120x120" alt="..." class="img-circle">
@@ -34,7 +34,7 @@ title: people in the group
       <p><span data-lorem="4s"></span><a href="#"> Find out more</a></p>
     </div>
   </div>
-  <h4>Current Group Members and Associates</h4>
+  <h3>Group Members and Associates</h3>
   <hr>
   <div class="thumbnail right-caption">
     <img data-src="holder.js/120x120" alt="..." class="img-rounded">

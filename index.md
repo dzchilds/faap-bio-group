@@ -22,7 +22,7 @@ title: Fundamental and Applied Population Biology Group
 </div>
 {% endfor %}
 
-<div class="row"><p><br></p></div>
+<div class="row hidden-xs"><p><br></p></div>
 
 <div class="row">
 <div class="col-sm-8 col-md-8">
@@ -36,6 +36,7 @@ title: Fundamental and Applied Population Biology Group
       </li>
     {% endfor %}
   </ul>
+  <br>
 </div>
 <div class="col-sm-4 col-md-4">
   <div class="well">
