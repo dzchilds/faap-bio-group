@@ -1,6 +1,7 @@
 ---
 layout: with-jumbotron
 title: Fundamental and Applied Population Biology Group
+post-limit: 5
 ---
 
 {% for post in site.posts %}
@@ -22,19 +23,28 @@ title: Fundamental and Applied Population Biology Group
 </div>
 {% endfor %}
 
-<div class="row hidden-xs"><p><br></p></div>
+<div class="well text-center">
+      We are a part of the <a href="http://www.sheffield.ac.uk/aps">
+      Department of Animal and Plant Sciences</a> at the
+      <a href="http://www.sheffield.ac.uk">University of
+      Sheffield</a>
+</div>
 
 <div class="row">
 <div class="col-sm-8 col-md-8">
   <h3 class>News and Opportunities</h3>
   <hr>
   <ul class="list-unstyled">
-    {% for post in site.posts %}
+    {% for post in site.posts limit:page.post-limit %}
       <li>
         <h4><a data-toggle="modal" data-target="{{ forloop.index | prepend: "#modal_id" }}">{{ post.title }}</a> <small>{{ post.date | date_to_string }}</small></h4>
         <p>{{ post.excerpt }}</p>
       </li>
     {% endfor %}
+	<hr>
+	{% if site.posts.size > page.post-limit %}
+	  <p class="text-center"><a href="{{ site.url}}news/index.html">Old News</a></p>
+	{% endif %}
   </ul>
   <br>
 </div>
@@ -56,3 +66,6 @@ title: Fundamental and Applied Population Biology Group
 </div>
 </div>
 
+<div class="row">
+  <p>{{ paginator.posts }}</p>
+</div>

@@ -6,10 +6,13 @@ title: people in the group
 <div class="row hidden-xs"><p><br></p></div>
 
 <div class="row">
-<div class="col-sm-4 col-md-4">
-  <div class="well">
+<div class="col-sm-3 col-md-3 col-lg-2">
+  <!-- <div class="well"> -->
+    <h3>People</h3>
+	<hr>
     <h4>Group Leader</h4>
-    <p>Dylan Childs</p>
+    <p><i class="fa
+	fa-user fa-lg fa-fw"></i>  Dylan Childs</p>
     <p><br></p>
     <h4>Post Docs</h4>
     {% for person in site.data.people.pdra-current %}<p><i class="fa
@@ -22,9 +25,10 @@ title: people in the group
     <h4>Masters Students</h4>
     {% for person in site.data.people.msc-current %}<p><i class="fa
 	fa-user fa-lg fa-fw"></i> {{ person.name }}</p>{% endfor %}
-  </div>
+  <!-- </div> -->
+  <br>
 </div>
-<div class="col-sm-8 col-md-8">
+<div class="col-sm-9 col-md-9 col-lg-10">
   <h3>Positions Available</h3>
   <hr>
   <div class="thumbnail right-caption">
