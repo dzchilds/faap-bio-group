@@ -53,8 +53,9 @@ post-limit: 5
     <h3> Contact us </h3>
 	<p class="text-justify">The group leader is Dylan Childs. You should contact him if you
 	  would like discuss opportunities such as PhDs or fellowship support.
-    <br><br>
+    <br><br> 
     <p class="text-left"><i class="fa fa-twitter-square fa-lg fa-fw"></i>&nbsp;dylan_childs</p>
+    <p class="text-left"><i class="fa fa-skype fa-lg fa-fw"></i>&nbsp;dylan.childs</p>
     <p class="text-left"><i class="fa fa-google-plus-square fa-lg fa-fw"></i>&nbsp;d.childs@sheffield.ac.uk</p>
     <p class="text-left"><i class="fa fa-phone fa-lg
 	fa-fw"></i>&nbsp;(+44)&nbsp;(0)114&nbsp;222&nbsp;4313</p>
