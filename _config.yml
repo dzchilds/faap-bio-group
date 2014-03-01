@@ -4,8 +4,9 @@ description: "We do population biology on it"
 
 pagination: 2
 
-url: "file:///Users/dzchilds/Repos/faap-bio-group/_site/"
+# url: "file:///Users/dzchilds/Repos/faap-bio-group/_site/"
 # url: "file:///Users/Dylan/Repos/faap-bio-group/_site/"
+url: "/Users/dylanchilds/Repos/faap-bio-group/_site/"
 
 markdown: redcarpet
 
