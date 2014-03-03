@@ -11,17 +11,9 @@ title: Outputs from the group
         <div class="col-sm-10 col-md-10">
             <h3> </h3>
             {% for paper in site.data.outputs-new %}
-            <p>
-            {% for author in paper.authors %}
-                {% assign in_people = false %}                
-                {% for person in site.data.people-new %}
-                    {% if in_people == false and person.key == author %}
-                        {{ person.name }}
-                        {{ assign in_people = true }}
-                    {% endif %}  
-                {% endfor %}          
-            {% endfor %}
-            ({{ paper.year }}) <em>{{ paper.title }}</em> <strong>{{ paper.journal }}</strong>
+            <p> {% assign andcase = paper.authors | size | minus: 1 %}
+                {% for author in paper.authors %}{% assign in_people = false %}{% for person in site.data.people-new %}{% if in_people == false and person.key == author %}{{ person.name }}{{ assign in_people = true }}{% endif %}{% endfor %}{% if forloop.index < forloop.length %}{% if forloop.index < andcase %}, {% else %} and {% endif %}{% endif %}{% endfor %}
+                ({{ paper.year }}) <em>{{ paper.title }}</em> <strong>{{ paper.journal }}</strong>
             </p>
             {% endfor %}
         </div>
