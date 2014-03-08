@@ -1,86 +1,22 @@
----
-people:
-  - me: &me      
-      name: Dylan Childs
-      url:  null
-  - rdbassar: &rdbassar
-      name: Ron Bassar
-      url:  null
-  - dtblumstein: &dtblumstein
-      name: Daniel Blumstein
-      url:  https://www.eeb.ucla.edu/Faculty/Blumstein/
-  - tcoulson: &tcoulson
-      name: Tim Coulson
-      url:  http://www.zoo.ox.ac.uk/people/view/coulson_t.htm
-  - redwards: &redwards     
-      name: Rob Edwards
-      url:  http://www.york.ac.uk/biology/research/plant-biology/robert-edwards/
-  - rpfreckleton: &rpfreckleton      
-      name: Rob Feckleton
-      url:  http://www.shef.ac.uk/aps/staff-and-students/acadstaff/freckleton
-  - jdhadfield: &jdhadfield      
-      name: Jarrod Hadfield
-      url:  null
-  - alopezsepulcre: &alopezsepulcre      
-      name: Andrés López-Sepulcre
-      url:  http://www.ecoevo.net/LopezSepulcre/Home.html
-  - pneve: &pneve
-      name: Paul Neve
-      url:  null
-  - kjnorris: &kjnorris
-      name: Ken Norris
-      url:  http://www.reading.ac.uk/caer/staff_ken_norris.html
-  - jmpemberton: &jmpemberton
-      name: Josephine Pemberton
-      url:  http://pemberton.bio.ed.ac.uk
-  - mrees: &mrees
-      name: Mark Rees
-      url:  http://www.shef.ac.uk/aps/staff-and-students/acadstaff/rees
-  - dnreznick: &dnreznick
-      name: David Reznick
-      url:  https://cnas.ucr.edu/guppy/scientists/reznick.html
-
-format:
-  - sep: &sep
-      name: ", "
-  - and: &and
-      name: " and "
-  - pipe: &pipe
-      name: " | "
-  - PI: &pi
-      name: " (PI)"
-  - CI: &ci
-      name: " (CI)"
-  - PP: &pp
-      name: " (PP)"
-  - PD: &pd
-      name: " (PD)"
-      
 current-funded:
   - stitle: Advanced postdoctoral research fellowship 
     when: "2011-2016"
     funding: NERC (NE/I022027/1)
     image: lab-icon.jpg
-    people: [*me, *pi, *sep, *jmpemberton, *pp, *and, *dtblumstein, *pp]
+    people: [me, jmpemberton, dtblumstein]
+    roles: [PI, PP, PP]
     description: <span data-lorem="10s"></span>
-  - stitle: BBSRC-HGCA black-grass herbicide resistance initiative 
+  - stitle: BBSRC-HGCA black-grass initiative 
     when: "2014-2018"
-    funding: BBSRC and HGCA
+    funding: BBSRC (BB/L001489/1) and HGCA
     image: grass-250-250.png
-    people: [*me, *ci, *sep, *redwards, *pi, *sep, *rpfreckleton, *ci, *sep,
-             *jdhadfield, *ci, *sep, *pneve, *ci, *and, *kjnorris, *ci]
+    people: [me, redwards, rpfreckleton, jdhadfield, pneve, kjnorris]
+    roles: [CI, PI, CI, CI, CI, CI]
     description: <span data-lorem="10s"></span>
   - stitle: Size-structured density dependence
     when: "2014-2017"
     funding: NERC (NE/K014218/1)
     image: fish-297-297.png
-    people: [*rdbassar, *pd, *sep, *me, *ci, *sep, *tcoulson, *pi, *sep,
-             *alopezsepulcre, *pp, *sep, *mrees, *ci, *and, *dnreznick, *pp]
+    people: [rdbassar, me, tcoulson, alopezsepulcre, mrees, dnreznick]
+    roles: [PD, CI, PI, PP, CI, PP]
     description: <span data-lorem="10s"></span>
-    
-      
-      
-      
-
-
-

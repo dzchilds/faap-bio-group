@@ -15,15 +15,15 @@ title: people in the group
 	fa-user fa-lg fa-fw"></i>  Dylan Childs</p>
     <p><br></p>
     <h4>Post Docs</h4>
-    {% for person in site.data.people.pdra-current %}<p><i class="fa
+    {% for person in site.data.group.pdra-current %}<p><i class="fa
 	fa-user fa-lg fa-fw"></i> {{ person.name }}</p>{% endfor %}
     <p><br></p>
     <h4>PhD Students</h4>
-    {% for person in site.data.people.phd-current %}<p><i class="fa
+    {% for person in site.data.group.phd-current %}<p><i class="fa
 	fa-user fa-lg fa-fw"></i> {{ person.name }}</p>{% endfor %}
     <p><br></p>
     <h4>Masters Students</h4>
-    {% for person in site.data.people.msc-current %}<p><i class="fa
+    {% for person in site.data.group.msc-current %}<p><i class="fa
 	fa-user fa-lg fa-fw"></i> {{ person.name }}</p>{% endfor %}
   <!-- </div> -->
   <br>
@@ -55,7 +55,7 @@ title: people in the group
   populations. </p>
     </div>
   </div>
-  {% for person in site.data.people.phd-current %}
+  {% for person in site.data.group.phd-current %}
   <div class="thumbnail right-caption">
     <img data-src="holder.js/120x120" alt="..." class="img-rounded"">
     <div class="caption">

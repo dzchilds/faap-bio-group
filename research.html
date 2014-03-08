@@ -38,10 +38,7 @@ title: people in the group
         <h4>{{ project.stitle }} <small>({{ project.when }})</small></h4>
         <h5><small>Funded by {{ project.funding }}</small></h5>
         <p>{{ project.description }}</p>
-        <h5><small>
-          Who is involved? 
-          {% for person in project.people %}{% if person.url != null %}<a href="{{person.url}}">{{person.name}}</a>{% else %}{{person.name}}{% endif %}{% endfor %}
-        </small></h5>
+        <h5><small>Who is involved? {% assign andcase = project.people | size | minus: 1 %}{% for collaborator in project.people %}{% assign i = forloop.index0 %}{% assign in_people = false %}{% for person in site.data.people %}{% if in_people == false and person.key == collaborator %}{% if person.url != null %}<a href="{{person.url}}">{{person.fname}}</a>{% else %}{{person.fname}}{% endif %}{{ assign in_people = true }}{% endif %}{% endfor %} ({{project.roles[i]}}){% if forloop.index < forloop.length %}{% if forloop.index < andcase %}, {% else %} and {% endif %}{% endif %}{% endfor %}</small></h5>
       </div>
     </div>
     {% endfor %}
