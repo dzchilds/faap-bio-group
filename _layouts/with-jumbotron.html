@@ -4,24 +4,23 @@
 <body>
   <div id="wrap">
     {% include navbar.html%}
+    <div class="jumbotron heading">
+      <div class="container">
+        <h3>Fundamental and Applied Population Biology Group
+        <h3><small>We are interested in the population biology and life histories
+        of organisms</small></h3></h3>
+      </div>
+    </div>
+    <div class="jumbotron skinny hidden-xs">
+      <div class="container text-left">
+        {% include big-buttons.html%}
+      </div>
+    </div>
     <div class="container">
-      <br>
-      <h3>Fundamental and Applied Population Biology Group</h3>
-      <h3><small>We are interested in the population biology and life histories
-      of organisms</small></h3>
-      <br>
+      <!-- {% include big-buttons.html%} -->
+      {{ content }}
     </div>
-  <div class="jumbotron skinny hidden-xs">
-    <div class="container text-left">
-      {% include big-buttons.html%}
-    </div>
-  </div>
-  <div class="container">
-    <!-- {% include big-buttons.html%} -->
-    {{ content }}
-  </div>
   </div>
   {% include footer.html%}
   {% include scripts.html%}
-
 </body></html>
