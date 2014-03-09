@@ -23,6 +23,23 @@ post-limit: 5
 </div>
 {% endfor %}
 
+<div class="modal fade" id="dzc-tweets" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Tweets</h4>
+      </div>
+      <div class="modal-body" id="twitter-modal-body">
+          <a class="twitter-timeline" href="https://twitter.com/dylan_childs" data-widget-id="442323518550585344" data-chrome="nofooter noheader noborders transparent">Tweets by @dylan_childs</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+      <div class="modal-footer" id="twitter-modal-footer">
+        <a type="button" class="btn btn-default" href="https://twitter.com/dylan_childs"><i class="fa fa-twitter fa-lg fa-fw"></i>Follow</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="well text-center">
       We are a part of the <a href="http://www.sheffield.ac.uk/aps">
       Department of Animal and Plant Sciences</a> at the
@@ -54,7 +71,7 @@ post-limit: 5
 	<p class="text-justify">The group leader is Dylan Childs. You should contact him if you
 	  would like discuss opportunities such as PhDs or fellowship support.
     <br><br> 
-    <p class="text-left"><i class="fa fa-twitter-square fa-lg fa-fw"></i>&nbsp;dylan_childs</p>
+    <p class="text-left"><a data-toggle="modal" data-target="#dzc-tweets"><i class="fa fa-twitter-square fa-lg fa-fw"></i></a>&nbsp;dylan_childs</p>
     <p class="text-left"><i class="fa fa-skype fa-lg fa-fw"></i>&nbsp;dylan.childs</p>
     <p class="text-left"><i class="fa fa-google-plus-square fa-lg fa-fw"></i>&nbsp;d.childs@sheffield.ac.uk</p>
     <p class="text-left"><i class="fa fa-phone fa-lg
