@@ -1,6 +1,7 @@
 ---
 layout: with-jumbotron
 title: people in the group
+root: "../"
 ---
 
 <div class=row><div class="col-sm-12 col-md-12">
@@ -29,7 +30,7 @@ title: people in the group
     {% for project in site.data.projects.current-funded %}
 	<div class="thumbnail right-caption">
 	  {% if project.image != null %}
-       <img src="{{ site.url }}assets/images/{{ project.image }}"
+       <img src="{{ page.root }}assets/images/{{ project.image }}"
 	      width="100" height="100" class="img-rounded">
       {% else %}
         <img data-src="holder.js/100x100" alt="..." class="img-rounded">

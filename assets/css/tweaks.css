@@ -46,24 +46,29 @@ body {
 .jumbotron.heading {
     margin-bottom: 0px;
     padding: 22px;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
 }
 
 /* define a skinny jumbotron */
 .jumbotron.skinny {
     padding-top: 12px;
-    padding-bottom: 6px;
-    background-color: #d9d9d9;
+    padding-bottom: 8px;
+    background-color: #f0f0f0;
 }
 
-#twitter-modal-body {
+.twitter-modal .modal-body {
     margin: 0px;
+    margin-bottom: -22px;
     padding-bottom: 0px;
-    padding-left: 40px;
+    padding-left: 10px;
     padding-top: 0px;
     padding-right: 0px;
 }
 
-#twitter-modal-footer {
-    margin-top: -7px;
+.twitter-modal .modal-dialog {
+  width: 530px; /* max size allowed by the twitter widget = 520 */
+}
+
+#skinny-top-marg {
+    margin-top: 0px;   
 }

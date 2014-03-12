@@ -2,6 +2,7 @@
 layout: with-jumbotron
 title: Fundamental and Applied Population Biology Group
 post-limit: 5
+root: "./"
 ---
 
 {% for post in site.posts %}
@@ -23,17 +24,17 @@ post-limit: 5
 </div>
 {% endfor %}
 
-<div class="modal fade" id="dzc-tweets" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
+<div class="modal fade twitter-modal" id="dzc-tweets" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h4 class="modal-title" id="myModalLabel">Tweets</h4>
       </div>
-      <div class="modal-body" id="twitter-modal-body">
-          <a class="twitter-timeline" href="https://twitter.com/dylan_childs" data-widget-id="442323518550585344" data-chrome="nofooter noheader noborders transparent">Tweets by @dylan_childs</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      <div class="modal-body">
+          <a class="twitter-timeline" href="https://twitter.com/dylan_childs" data-widget-id="442323518550585344" data-chrome="nofooter noheader noborders transparent" width="520">Tweets by @dylan_childs</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div>
-      <div class="modal-footer" id="twitter-modal-footer">
+      <div class="modal-footer">
         <a type="button" class="btn btn-default" href="https://twitter.com/dylan_childs"><i class="fa fa-twitter fa-lg fa-fw"></i>Follow</a>
       </div>
     </div>
@@ -48,7 +49,7 @@ post-limit: 5
 </div>
 
 <div class="row">
-<div class="col-sm-8 col-md-8">
+<div class="col-sm-7 col-md-8">
   <h3 class>News and Opportunities</h3>
   <hr>
   <ul class="list-unstyled">
@@ -65,7 +66,7 @@ post-limit: 5
   </ul>
   <br>
 </div>
-<div class="col-sm-4 col-md-4">
+<div class="col-sm-5 col-md-4">
   <div class="well">
     <h3> Contact us </h3>
 	<p class="text-justify">The group leader is Dylan Childs. You should contact him if you
