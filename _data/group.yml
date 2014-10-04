@@ -1,34 +1,5 @@
 ---
-me:
-  name: Dylan Childs
-  email: d.childs@sheffield.ac.uk
-  url: http://www.shef.ac.uk/aps/staff-and-students/acadstaff/childs
-
-phds:
-  - jgriffiths: &jgriffiths
-      name: Jason Griffiths
-      email: jason.griffiths@sheffield.ac.uk
-      about: Jason has a broad interest in population biology; primarily studying how shifting environment conditions influence the patterns of species abundances over time. He is particularly interested in understanding how predictions of future population abundances are complicated by the complex interplay of changes in multiple components of the environment and by predatory or competitive interactions between species. He is also interested in understanding how seasonal variability in the environment and the timing of environmental disturbances can drive and even excite fluctuations in species abundances. Jason’s work unifies empirical evidence with ecological theory, by confronting observations from laboratory populations and long-term field study systems with statistical models. He is a strong advocate of data driven ecology, using dynamic models as a tool to quantify the processes underlying ecological systems.
-  - bhindle: &bhindle
-      name: Bethan Hindle
-      email: bjhindle1@sheffield.ac.uk
-      about: <span data-lorem="4s"></span>
-
-pdras:
-  - pdra1: &pdra1
-      name: Arriving Soon
-  - pdra2: &pdra2
-      name: Arriving in 2015
-  - pdra3: &pdra3
-      name: Arriving in 2015
-
-mscs:
-  - jprice: &jprice
-      name: Joe Price
-  - rgoodsell: &rgoodsell
-      name: Rob Goodsell
- 
-
-phd-current:  [*jgriffiths, *bhindle]
-pdra-current: [*pdra1, *pdra2, *pdra3]
-msc-current:  [*rgoodsell, *jprice] 
+all-people: [dzchilds, jgriffiths, hhicks, bhindle]
+pdras: [hhicks, missing]
+phds: [jgriffiths, bhindle] 
+masters: [missing, missing]
