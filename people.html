@@ -15,17 +15,14 @@ root: "../"
     <p><i class="fa
 	fa-user fa-lg fa-fw"></i>  Dylan Childs</p>
     <p><br></p>
-    <h4>Post Docs</h4>
-    {% for person in site.data.group.pdra-current %}<p><i class="fa
-	fa-user fa-lg fa-fw"></i> {{ person.name }}</p>{% endfor %}
+    <h4>Post Docs</h4><br>
+    {% for member in site.data.group.pdras %}{% assign i = forloop.index0 %}{% assign in_people = false %}{% for person in site.data.people %}{% if in_people == false and person.key == member %}<p><i class="fa fa-user fa-lg fa-fw"></i>{{person.fname}}</p>{{ assign in_people = true }}{% endif %}{% endfor %}{% endfor %}
     <p><br></p>
-    <h4>PhD Students</h4>
-    {% for person in site.data.group.phd-current %}<p><i class="fa
-	fa-user fa-lg fa-fw"></i> {{ person.name }}</p>{% endfor %}
+    <h4>PhD Students</h4><br>
+    {% for member in site.data.group.phds %}{% assign i = forloop.index0 %}{% assign in_people = false %}{% for person in site.data.people %}{% if in_people == false and person.key == member %}<p><i class="fa fa-user fa-lg fa-fw"></i>{{person.fname}}</p>{{ assign in_people = true }}{% endif %}{% endfor %}{% endfor %}
     <p><br></p>
-    <h4>Masters Students</h4>
-    {% for person in site.data.group.msc-current %}<p><i class="fa
-	fa-user fa-lg fa-fw"></i> {{ person.name }}</p>{% endfor %}
+    <h4>Masters Students</h4><br>
+    {% for member in site.data.group.masters %}{% assign i = forloop.index0 %}{% assign in_people = false %}{% for person in site.data.people %}{% if in_people == false and person.key == member %}<p><i class="fa fa-user fa-lg fa-fw"></i>{{person.fname}}</p>{{ assign in_people = true }}{% endif %}{% endfor %}{% endfor %}
   <!-- </div> -->
   <br>
 </div>
@@ -41,29 +38,22 @@ root: "../"
   </div>
   <h3>Group Members and Associates</h3>
   <hr>
+  {% for member in site.data.group.all-people %}{% assign i = forloop.index0 %}{% assign in_people = false %}{% for person in site.data.people %}{% if in_people == false and person.key == member %}
   <div class="thumbnail right-caption">
-    <img data-src="holder.js/120x120" alt="..." class="img-rounded">
+	  {% if person.image != null %}
+       <img src="{{ page.root }}assets/images/{{ person.image }}"
+	      width="130" height="130" class="img-rounded">
+      {% else %}
+        <img data-src="holder.js/130x130" alt="..." class="img-rounded">
+      {% endif %}
     <div class="caption">
-      <h4>Dylan Childs <small>Group Leader</small></h4>
-      <p class="text-justify">Dylan is a population biologist with
-  interests at both the pure and applied ends of the spectrum. He
-  follows an interdisciplinary approach, developing data-driven models
-  to understand population dynamics and natural selection in
-  laboratory and free-living populations. He is particularly keen to
-  understand how demographic, environmental and ecological processes
-  interact to shape selection on life histories. He is also interested
-  in developing theory and applications for modelling structured
-  populations. </p>
+      <h4>{{ person.fname }}</h4>
+      <p>{{ person.about }}<a href={{ person.url }}> Home page</a></p>
+      {% if person.advisors != null %}<h5 class="text-right"><small>Advisors: {% assign andcase = person.advisors | size | minus: 1 %}{% for advisor in person.advisors %}{% assign i = forloop.index0 %}{% assign in_people = false %}{% for advisor_data in site.data.people %}{% if in_people == false and advisor_data.key == advisor %}{% if advisor_data.url != null %}<a href="{{advisor_data.url}}">{{advisor_data.fname}}</a>{% else %}{{advisor_data.fname}}{% endif %}{{ assign in_people = true }}{% endif %}{% endfor %} ({{person.roles[i]}}){% if forloop.index < forloop.length %}{% if forloop.index < andcase %}, {% else %} and {% endif %}{% endif %}{% endfor %}</small></h5>{% endif %}{% if person.advisors == null %}<h5><br><br></h5>{% endif %}
     </div>
   </div>
-  {% for person in site.data.group.phd-current %}
-  <div class="thumbnail right-caption">
-    <img data-src="holder.js/120x120" alt="..." class="img-rounded"">
-    <div class="caption">
-      <h4>{{ person.name }} <small>PhD Student</small></h4><p>{{ person.about }}<a href="#"> Find out more</a></p>
-    </div>
-  </div>
-  {% endfor %}
+  
+  {{ assign in_people = true }}{% endif %}{% endfor %}{% endfor %}    
 </div>
 
 </div>
